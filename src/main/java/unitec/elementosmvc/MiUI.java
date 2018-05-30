@@ -5,6 +5,7 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
@@ -21,11 +22,14 @@ public class MiUI extends UI{
         Label etiqueta=new Label("Bienvenido a mi aplicación");
         etiqueta.addStyleName(ValoTheme.LABEL_H2);
         
-        Button boton=new Button("Ingresar");
+        TextField texto=new TextField();
+        texto.setPlaceholder("Cuerpo del mensaje");
+        Button boton=new Button("Guardar Mensaje");
         boton.addStyleName(ValoTheme.BUTTON_DANGER);
         
         //AGREGAMOS ETIQUETA Y BOTÓN A EL LAYOUT
         layout.addComponent(etiqueta);
+        layout.addComponent(texto);
         layout.addComponent(boton);
         
         //FINALMENTE AGREGAMOS EL LAYOUT AL CONTENEDOR PRINCIPAL DE INIT

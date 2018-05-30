@@ -1,5 +1,6 @@
 package unitec.elementosmvc;
 
+import java.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +21,26 @@ public class ElementosMvcApplication implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
      
-        servicio.obtenerSaldo().obtenerSaldo();
-        repoMensaje.save(new Mensaje("Mi primer mensaje"));
+        //servicio.obtenerSaldo().obtenerSaldo();
+        //LocalDate fecha=LocalDate.now();
+        //repoMensaje.save(new Mensaje("hola",fecha,"cerdito"));
+        
+        //2)BUSCAR TODOS LOS MENSAJES YA
+        
+        /*for(Mensaje mensa: repoMensaje.findAll()){
+            System.out.println(mensa);
+        }*/
+        
+        //3)BUSCAR MENSAJE POR ID
+        //System.out.println(repoMensaje.findByCuerpo("cerdito"));
+        //System.out.println(repoMensaje.findById("5b08c8811d021019cc3843c2").get());
+        
+        //4)ACTUALIZAR
+        
+        //5)BORRAR
+        /*Mensaje m=new Mensaje();
+        m.setId("hola");
+        repoMensaje.delete(m);*/
+       
     }
 }
