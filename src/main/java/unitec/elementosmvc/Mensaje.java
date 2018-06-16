@@ -30,6 +30,14 @@ public class Mensaje {
         this.cuerpo = cuerpo;
     }
 
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
     public Mensaje() {
     }
 
