@@ -83,7 +83,7 @@ public class ControladorMensaje {    //Clase controlador
         Estatus est = new Estatus();
         
         est.setSuccess(true);
-        est.setMensaje("Mensaje Guardado Con Éxito");
+        est.setMensaje("Mensaje Actualizado Con Éxito");
         
         return est;
     }
@@ -99,7 +99,7 @@ public class ControladorMensaje {    //Clase controlador
         Estatus e = new Estatus();
         
         e.setSuccess(true);
-        e.setMensaje("Mensaje Guardado Con Éxito");
+        e.setMensaje("Mensaje Borrado Con Éxito");
 
         
         return e;
