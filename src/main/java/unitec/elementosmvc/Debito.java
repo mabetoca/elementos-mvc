@@ -9,7 +9,7 @@ package unitec.elementosmvc;
  *
  * @author T-107
  */
-public class Debito implements Tarjeta{
+public class Debito implements Tarjetas{
     
     @Override
     public void obtenerSaldo(){

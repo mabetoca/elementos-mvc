@@ -9,7 +9,7 @@ package unitec.elementosmvc;
  *
  * @author T-107
  */
-public class Nomina implements Tarjeta{
+public class Nomina implements Tarjetas{
     
     @Override
     public void obtenerSaldo(){

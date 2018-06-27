@@ -5,18 +5,12 @@
  */
 package unitec.elementosmvc;
 
-import org.springframework.context.annotation.Configuration;
-
 /**
  *
  * @author T-107
  */
-@Configuration
-public class ServicioTarjeta {
+public interface Tarjetas {
     
-    Tarjetas obtenerSaldo(){
-        return new Nomina();
-    }
-    
+    public void obtenerSaldo();
     
 }
