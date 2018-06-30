@@ -3,7 +3,7 @@ package unitec.elementosmvc;
 import unitec.elementosmvc.RepositorioCliente;
 import com.fasterxml.jackson.databind.ObjectMapper;
 //import ete.Cliente;
-import ete.Estatus;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
